@@ -17,6 +17,10 @@
 		355FE2FC238FCE7C0089BA4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 355FE2FB238FCE7C0089BA4C /* Assets.xcassets */; };
 		355FE2FF238FCE7C0089BA4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 355FE2FD238FCE7C0089BA4C /* LaunchScreen.storyboard */; };
 		355FE305238FD1000089BA4C /* LDAUsefulTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355FE304238FD1000089BA4C /* LDAUsefulTools.swift */; };
+		BC0CE445238FFAB00008E44E /* LDARandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CE444238FFAB00008E44E /* LDARandomColor.swift */; };
+		BC0CE447238FFCBF0008E44E /* LDAPrintSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CE446238FFCBF0008E44E /* LDAPrintSignature.swift */; };
+		BC0CE449238FFDDF0008E44E /* LDARandomColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CE448238FFDDF0008E44E /* LDARandomColorTests.swift */; };
+		BC66886123900E5600FC0343 /* LDAPrintSignatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC66886023900E5600FC0343 /* LDAPrintSignatureTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		355FE2FE238FCE7C0089BA4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		355FE300238FCE7C0089BA4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		355FE304238FD1000089BA4C /* LDAUsefulTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDAUsefulTools.swift; sourceTree = "<group>"; };
+		BC0CE444238FFAB00008E44E /* LDARandomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDARandomColor.swift; sourceTree = "<group>"; };
+		BC0CE446238FFCBF0008E44E /* LDAPrintSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDAPrintSignature.swift; sourceTree = "<group>"; };
+		BC0CE448238FFDDF0008E44E /* LDARandomColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDARandomColorTests.swift; sourceTree = "<group>"; };
+		BC66886023900E5600FC0343 /* LDAPrintSignatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDAPrintSignatureTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,8 @@
 				355FE2D5238FCCED0089BA4C /* LDAUsefulTools.h */,
 				355FE2D6238FCCED0089BA4C /* Info.plist */,
 				355FE304238FD1000089BA4C /* LDAUsefulTools.swift */,
+				BC0CE444238FFAB00008E44E /* LDARandomColor.swift */,
+				BC0CE446238FFCBF0008E44E /* LDAPrintSignature.swift */,
 			);
 			path = LDAUsefulTools;
 			sourceTree = "<group>";
@@ -108,6 +118,8 @@
 			children = (
 				355FE2E0238FCCED0089BA4C /* LDAUsefulToolsTests.swift */,
 				355FE2E2238FCCED0089BA4C /* Info.plist */,
+				BC0CE448238FFDDF0008E44E /* LDARandomColorTests.swift */,
+				BC66886023900E5600FC0343 /* LDAPrintSignatureTests.swift */,
 			);
 			path = LDAUsefulToolsTests;
 			sourceTree = "<group>";
@@ -267,6 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC0CE447238FFCBF0008E44E /* LDAPrintSignature.swift in Sources */,
+				BC0CE445238FFAB00008E44E /* LDARandomColor.swift in Sources */,
 				355FE305238FD1000089BA4C /* LDAUsefulTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +289,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC0CE449238FFDDF0008E44E /* LDARandomColorTests.swift in Sources */,
+				BC66886123900E5600FC0343 /* LDAPrintSignatureTests.swift in Sources */,
 				355FE2E1238FCCED0089BA4C /* LDAUsefulToolsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

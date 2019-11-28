@@ -20,5 +20,4 @@ class LDAUsefulToolsTests: XCTestCase {
     func testSum() {
         XCTAssertEqual(tools.sum(a: 1, b: 1), 2)
     }
-    
 }
