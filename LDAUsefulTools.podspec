@@ -16,8 +16,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "LDAUsefulTools"
-  spec.version      = "1.0.0"
-  spec.summary      = "Library for IOS school raiffeisen"
+  spec.version      = "1.0.1"
+  spec.summary      = "Library includes different useful tools, which our team LDA going to use for learning iOS."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,8 +25,12 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-  Library for IOS school raiffeisen bank
-                   DESC
+  Library includes different useful tools, which our team LDA use by learning IOS. There are some methods and properties, that made our life easier :
+  Date periods (like todayMidnight)
+  Formaters of differents data (Numbers, Date etc)
+  Random color getter
+  etc.
+                     DESC
 
   spec.homepage     = "https://github.com/PolyakovLev/LDAUsefulTools"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
