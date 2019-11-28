@@ -21,6 +21,11 @@
 		BC0CE447238FFCBF0008E44E /* LDAPrintSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CE446238FFCBF0008E44E /* LDAPrintSignature.swift */; };
 		BC0CE449238FFDDF0008E44E /* LDARandomColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CE448238FFDDF0008E44E /* LDARandomColorTests.swift */; };
 		BC66886123900E5600FC0343 /* LDAPrintSignatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC66886023900E5600FC0343 /* LDAPrintSignatureTests.swift */; };
+		8C6CB4FC238FEFA7008DD1F9 /* LDADBOTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6CB4FB238FEFA7008DD1F9 /* LDADBOTools.swift */; };
+		8C6CB4FE238FF01E008DD1F9 /* LDADBOToolsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6CB4FD238FF01E008DD1F9 /* LDADBOToolsTest.swift */; };
+		E1C5374C238FEF6000D2B3C3 /* LDADateExtentionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C5374B238FEF6000D2B3C3 /* LDADateExtentionsTests.swift */; };
+		E1F45BF9238FD5D500C41F6A /* LDADateExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F45BF8238FD5D500C41F6A /* LDADateExtentions.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		BC0CE446238FFCBF0008E44E /* LDAPrintSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDAPrintSignature.swift; sourceTree = "<group>"; };
 		BC0CE448238FFDDF0008E44E /* LDARandomColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDARandomColorTests.swift; sourceTree = "<group>"; };
 		BC66886023900E5600FC0343 /* LDAPrintSignatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDAPrintSignatureTests.swift; sourceTree = "<group>"; };
+		8C6CB4FB238FEFA7008DD1F9 /* LDADBOTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDADBOTools.swift; sourceTree = "<group>"; };
+		8C6CB4FD238FF01E008DD1F9 /* LDADBOToolsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDADBOToolsTest.swift; sourceTree = "<group>"; };
+		E1C5374B238FEF6000D2B3C3 /* LDADateExtentionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDADateExtentionsTests.swift; sourceTree = "<group>"; };
+		E1F45BF8238FD5D500C41F6A /* LDADateExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDADateExtentions.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +119,9 @@
 				355FE304238FD1000089BA4C /* LDAUsefulTools.swift */,
 				BC0CE444238FFAB00008E44E /* LDARandomColor.swift */,
 				BC0CE446238FFCBF0008E44E /* LDAPrintSignature.swift */,
+
+				8C6CB4FB238FEFA7008DD1F9 /* LDADBOTools.swift */,
+				E1F45BF8238FD5D500C41F6A /* LDADateExtentions.swift */,
 			);
 			path = LDAUsefulTools;
 			sourceTree = "<group>";
@@ -120,6 +133,8 @@
 				355FE2E2238FCCED0089BA4C /* Info.plist */,
 				BC0CE448238FFDDF0008E44E /* LDARandomColorTests.swift */,
 				BC66886023900E5600FC0343 /* LDAPrintSignatureTests.swift */,
+				8C6CB4FD238FF01E008DD1F9 /* LDADBOToolsTest.swift */,
+				E1C5374B238FEF6000D2B3C3 /* LDADateExtentionsTests.swift */,
 			);
 			path = LDAUsefulToolsTests;
 			sourceTree = "<group>";
@@ -281,7 +296,9 @@
 			files = (
 				BC0CE447238FFCBF0008E44E /* LDAPrintSignature.swift in Sources */,
 				BC0CE445238FFAB00008E44E /* LDARandomColor.swift in Sources */,
+				E1F45BF9238FD5D500C41F6A /* LDADateExtentions.swift in Sources */,
 				355FE305238FD1000089BA4C /* LDAUsefulTools.swift in Sources */,
+				8C6CB4FC238FEFA7008DD1F9 /* LDADBOTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +308,9 @@
 			files = (
 				BC0CE449238FFDDF0008E44E /* LDARandomColorTests.swift in Sources */,
 				BC66886123900E5600FC0343 /* LDAPrintSignatureTests.swift in Sources */,
+				E1C5374C238FEF6000D2B3C3 /* LDADateExtentionsTests.swift in Sources */,
 				355FE2E1238FCCED0089BA4C /* LDAUsefulToolsTests.swift in Sources */,
+				8C6CB4FE238FF01E008DD1F9 /* LDADBOToolsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

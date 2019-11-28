@@ -14,4 +14,6 @@ public final class LDAUsefulTools {
     public func sum<T:Numeric>(a: T, b: T) -> T {
         return a + b
     }
+    
+    public init() {}
 }
