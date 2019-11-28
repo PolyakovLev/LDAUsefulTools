@@ -17,13 +17,10 @@
 		355FE2FC238FCE7C0089BA4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 355FE2FB238FCE7C0089BA4C /* Assets.xcassets */; };
 		355FE2FF238FCE7C0089BA4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 355FE2FD238FCE7C0089BA4C /* LaunchScreen.storyboard */; };
 		355FE305238FD1000089BA4C /* LDAUsefulTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355FE304238FD1000089BA4C /* LDAUsefulTools.swift */; };
-<<<<<<< HEAD
 		8C6CB4FC238FEFA7008DD1F9 /* LDADBOTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6CB4FB238FEFA7008DD1F9 /* LDADBOTools.swift */; };
 		8C6CB4FE238FF01E008DD1F9 /* LDADBOToolsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6CB4FD238FF01E008DD1F9 /* LDADBOToolsTest.swift */; };
-=======
 		E1C5374C238FEF6000D2B3C3 /* LDADateExtentionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C5374B238FEF6000D2B3C3 /* LDADateExtentionsTests.swift */; };
 		E1F45BF9238FD5D500C41F6A /* LDADateExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F45BF8238FD5D500C41F6A /* LDADateExtentions.swift */; };
->>>>>>> 5314a56d39cb125d12664daacf3d63964fbbec60
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,13 +49,11 @@
 		355FE2FE238FCE7C0089BA4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		355FE300238FCE7C0089BA4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		355FE304238FD1000089BA4C /* LDAUsefulTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDAUsefulTools.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		8C6CB4FB238FEFA7008DD1F9 /* LDADBOTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDADBOTools.swift; sourceTree = "<group>"; };
 		8C6CB4FD238FF01E008DD1F9 /* LDADBOToolsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDADBOToolsTest.swift; sourceTree = "<group>"; };
-=======
 		E1C5374B238FEF6000D2B3C3 /* LDADateExtentionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDADateExtentionsTests.swift; sourceTree = "<group>"; };
 		E1F45BF8238FD5D500C41F6A /* LDADateExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDADateExtentions.swift; sourceTree = "<group>"; };
->>>>>>> 5314a56d39cb125d12664daacf3d63964fbbec60
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,11 +108,9 @@
 				355FE2D5238FCCED0089BA4C /* LDAUsefulTools.h */,
 				355FE2D6238FCCED0089BA4C /* Info.plist */,
 				355FE304238FD1000089BA4C /* LDAUsefulTools.swift */,
-<<<<<<< HEAD
+
 				8C6CB4FB238FEFA7008DD1F9 /* LDADBOTools.swift */,
-=======
 				E1F45BF8238FD5D500C41F6A /* LDADateExtentions.swift */,
->>>>>>> 5314a56d39cb125d12664daacf3d63964fbbec60
 			);
 			path = LDAUsefulTools;
 			sourceTree = "<group>";
@@ -127,11 +120,8 @@
 			children = (
 				355FE2E0238FCCED0089BA4C /* LDAUsefulToolsTests.swift */,
 				355FE2E2238FCCED0089BA4C /* Info.plist */,
-<<<<<<< HEAD
 				8C6CB4FD238FF01E008DD1F9 /* LDADBOToolsTest.swift */,
-=======
 				E1C5374B238FEF6000D2B3C3 /* LDADateExtentionsTests.swift */,
->>>>>>> 5314a56d39cb125d12664daacf3d63964fbbec60
 			);
 			path = LDAUsefulToolsTests;
 			sourceTree = "<group>";
