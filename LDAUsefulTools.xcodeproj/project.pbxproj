@@ -16,6 +16,7 @@
 		355FE2FA238FCE7B0089BA4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 355FE2F8238FCE7B0089BA4C /* Main.storyboard */; };
 		355FE2FC238FCE7C0089BA4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 355FE2FB238FCE7C0089BA4C /* Assets.xcassets */; };
 		355FE2FF238FCE7C0089BA4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 355FE2FD238FCE7C0089BA4C /* LaunchScreen.storyboard */; };
+		355FE305238FD1000089BA4C /* LDAUsefulTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355FE304238FD1000089BA4C /* LDAUsefulTools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		355FE2FB238FCE7C0089BA4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		355FE2FE238FCE7C0089BA4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		355FE300238FCE7C0089BA4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		355FE304238FD1000089BA4C /* LDAUsefulTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDAUsefulTools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				355FE2D5238FCCED0089BA4C /* LDAUsefulTools.h */,
 				355FE2D6238FCCED0089BA4C /* Info.plist */,
+				355FE304238FD1000089BA4C /* LDAUsefulTools.swift */,
 			);
 			path = LDAUsefulTools;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				TargetAttributes = {
 					355FE2D1238FCCED0089BA4C = {
 						CreatedOnToolsVersion = 11.2;
+						LastSwiftMigration = 1120;
 					};
 					355FE2DA238FCCED0089BA4C = {
 						CreatedOnToolsVersion = 11.2;
@@ -263,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				355FE305238FD1000089BA4C /* LDAUsefulTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +442,7 @@
 		355FE2E7238FCCED0089BA4C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HG88VLY2WT;
@@ -454,6 +460,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Raiffeisen.LDAUsefulTools;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,6 +469,7 @@
 		355FE2E8238FCCED0089BA4C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HG88VLY2WT;
@@ -487,6 +495,7 @@
 		355FE2EA238FCCED0089BA4C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HG88VLY2WT;
 				INFOPLIST_FILE = LDAUsefulToolsTests/Info.plist;
@@ -505,6 +514,7 @@
 		355FE2EB238FCCED0089BA4C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HG88VLY2WT;
 				INFOPLIST_FILE = LDAUsefulToolsTests/Info.plist;
