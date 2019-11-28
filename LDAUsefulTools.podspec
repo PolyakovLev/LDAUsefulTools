@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "LDAUsefulTools"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "Library includes different useful tools, which our team LDA going to use for learning iOS."
 
   # This description is used to generate tags and improve search results.
