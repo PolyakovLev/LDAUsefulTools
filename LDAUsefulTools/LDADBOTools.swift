@@ -16,32 +16,32 @@ func validationInn (inn: [Int]) -> (Bool){
     var controlSumSecond = 0
     
     switch inn.count {
-    case 10:
-        for number in inn {
-            controlSumFirst += number * coefficientFirst[index+1]
-            index += 1
-        }
-        controlSumFirst %= 11
-        
-        if (controlSumFirst == inn[inn.count - 1]) {
-            return true
-        }
-        return false
-    case 12:
-        for number in inn {
-            controlSumFirst  = controlSumFirst + number * coefficientFirst[index]
-            controlSumSecond = controlSumSecond + number * coefficientSecond[index]
-            index += 1
-        }
-        controlSumFirst  %= 11
-        controlSumSecond %= 11
-        
-        if ((controlSumFirst == inn[inn.count - 2]) && (controlSumSecond == inn[inn.count - 1])) {
-            return true
-        }
-        return false
-    default:
-        return false
+        case 10:
+            for number in inn {
+                controlSumFirst += number * coefficientFirst[index+1]
+                index += 1
+            }
+            controlSumFirst %= 11
+            
+            if (controlSumFirst == inn[inn.count - 1]) {
+                return true
+            }
+            return false
+        case 12:
+            for number in inn {
+                controlSumFirst  = controlSumFirst + number * coefficientFirst[index]
+                controlSumSecond = controlSumSecond + number * coefficientSecond[index]
+                index += 1
+            }
+            controlSumFirst  %= 11
+            controlSumSecond %= 11
+            
+            if ((controlSumFirst == inn[inn.count - 2]) && (controlSumSecond == inn[inn.count - 1])) {
+                return true
+            }
+            return false
+        default:
+            return false
     }
 }
 
@@ -94,4 +94,28 @@ extension String {
         let innArray = self.compactMap{$0.wholeNumberValue}
         return validationInn(inn: innArray)
     }
+    
+    
+    private func isCardNumberCorrect(for inputedCardNumber: String) -> Bool {
+        let tmpEmptyString = inputedCardNumber.replacingOccurrences(of: " ", with: "")
+        if (tmpEmptyString.count < 16 || tmpEmptyString.count > 19) {return false}
+        for number in tmpEmptyString {
+            if !number.isNumber {
+                return false
+            }
+        }
+        return true
+    }
+    
+    
+    private func isPhoneNumberCorrest(for inputedPhoneNumber: String) -> Bool {
+        var tmpEmptyString = inputedPhoneNumber.replacingOccurrences(of: " ", with: "")
+        let firstSumbol = tmpEmptyString.removeFirst()
+        guard firstSumbol == "8" || firstSumbol == "7" else { return false }
+        guard tmpEmptyString.count == 10 else { return false }
+        return true
+    }
+    
+    
+    
 }
