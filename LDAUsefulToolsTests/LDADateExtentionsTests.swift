@@ -23,9 +23,9 @@ class LDADateExtentionTest: XCTestCase {
     }
     
     func testDateToString() {
-        XCTAssertEqual(date1.dateToString(from: date1, format: .yearMonthDayTime12), "2016.04.14 at 10:44 PM")
-        XCTAssertEqual(date1.dateToString(from: date1, format: .yearMonthDayTime24), "2016.04.14 at 22:44")
-        XCTAssertEqual(date1.dateToString(from: date1, format: .yearMinthDay), "2016.04.14")
+        XCTAssertEqual(date1.dateToString(format: .yearMonthDayTime12), "2016.04.14 at 10:44 PM")
+        XCTAssertEqual(date1.dateToString(format: .yearMonthDayTime24), "2016.04.14 at 22:44")
+        XCTAssertEqual(date1.dateToString(format: .yearMinthDay), "2016.04.14")
     }
     
     func testIsInPeriod() {

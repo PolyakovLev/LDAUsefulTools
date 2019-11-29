@@ -115,7 +115,5 @@ extension String {
         guard tmpEmptyString.count == 10 else { return false }
         return true
     }
-    
-    
-    
+
 }

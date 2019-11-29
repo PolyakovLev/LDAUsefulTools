@@ -16,10 +16,10 @@ extension Date {
         case yearMinthDay = "yyy.MM.dd"
     }
     
-    public func dateToString(from date: Date, format: DateFormat) -> String {
+    public func dateToString(format: DateFormat) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format.rawValue
-        return dateFormatter.string(from: date)
+        return dateFormatter.string(from: self)
     }
     
     public var todayMidnight: Date {
