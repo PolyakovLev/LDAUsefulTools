@@ -41,4 +41,17 @@ class LDADBOToolsTests: XCTestCase {
         XCTAssertEqual("8925 70 dc 0  0823".phonePhormater(), "+7 (925) 700-08-23")  // valid
         XCTAssertEqual("9257000823".phonePhormater(), "Номер введен неверно")        // no valid
     }
+    
+    func testIsCardNumberCorrect() {
+        XCTAssertEqual("4276450020206914".isCardNumberCorrect(), true)
+        XCTAssertEqual("42764500202069".isCardNumberCorrect(), false)
+        XCTAssertEqual("".isCardNumberCorrect(), false)
+        XCTAssertEqual("aaaaaaaaaaaaaaan".isCardNumberCorrect(), false)
+    }
+    
+    func testIsPhoneNumberCorrect() {
+        XCTAssertEqual("89963952066".isPhoneNumberCorrect(), true)
+        XCTAssertEqual("899639520662222".isPhoneNumberCorrect(), false)
+        XCTAssertEqual("+7 (925) 700-08-2".isPhoneNumberCorrect(), false)
+    }
 }

@@ -96,8 +96,8 @@ extension String {
     }
     
     
-    private func isCardNumberCorrect(for inputedCardNumber: String) -> Bool {
-        let tmpEmptyString = inputedCardNumber.replacingOccurrences(of: " ", with: "")
+    func isCardNumberCorrect() -> Bool {
+        let tmpEmptyString = self.replacingOccurrences(of: " ", with: "")
         if (tmpEmptyString.count < 16 || tmpEmptyString.count > 19) {return false}
         for number in tmpEmptyString {
             if !number.isNumber {
@@ -108,8 +108,8 @@ extension String {
     }
     
     
-    private func isPhoneNumberCorrect(for inputedPhoneNumber: String) -> Bool {
-        var tmpEmptyString = inputedPhoneNumber.replacingOccurrences(of: " ", with: "")
+    func isPhoneNumberCorrect() -> Bool {
+        var tmpEmptyString = self.replacingOccurrences(of: " ", with: "")
         let firstSumbol = tmpEmptyString.removeFirst()
         guard firstSumbol == "8" || firstSumbol == "7" else { return false }
         guard tmpEmptyString.count == 10 else { return false }
