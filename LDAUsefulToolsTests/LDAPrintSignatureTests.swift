@@ -17,9 +17,11 @@ class LDAPrintSignatureTests: XCTestCase {
         tools = LDAPrintSignature()
     }
     
-//    func testDebugLog() {
-//        let stringOutput = "object: <UIApplication: 0x7f9da5d00310> file: <AppDelegate.swift> function: application(_:didFinishLaunchingWithOptions:)"
-//        let application = UIApplication()
-//        XCTAssert(tools.debugLog(object: application) == stringOutput, true)
-//    }
+    func testDebugLog() {
+        let view = UIView()
+        let className = (#file as NSString).lastPathComponent
+        let stringOutput = "object: \(view) file: <\(className)> function: \(#function)\n"
+
+        XCTAssertEqual(tools.debugLog(object: view) == stringOutput, true)
+    }
 }

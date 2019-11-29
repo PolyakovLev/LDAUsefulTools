@@ -10,15 +10,9 @@ import XCTest
 @testable import LDAUsefulTools
 
 class LDARandomColorTests: XCTestCase {
-    
-    var tools: LDARandomColor!
-    
-    override func setUp() {
-        tools = LDARandomColor()
-    }
-        
+
     func testRandom() {
-        let value = tools.random()
+        let value = CGFloat.random()
         XCTAssertEqual(value > 0 && value < 256, true)
     }
 }

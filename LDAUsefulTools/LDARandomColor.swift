@@ -6,19 +6,17 @@
 //  Copyright © 2019 POLYAKOV Lev. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-public final class LDARandomColor {
-
-    public init() {}
-    
-    public func random() -> CGFloat {
+extension CGFloat {
+    static func random() -> CGFloat {
         return CGFloat(arc4random()) / CGFloat(UInt32.max)
     }
+}
+
+extension UIColor {
     public func randomColor() -> UIColor {
-        return UIColor(red: random(), green: random(),
-                       blue: random(), alpha: random())
+        return UIColor(red: .random(), green: .random(), blue:  .random(), alpha: .random())
     }
 }
 
