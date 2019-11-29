@@ -10,13 +10,13 @@ import Foundation
 
 extension Date {
     
-    enum DateFormat: String {
+    public enum DateFormat: String {
         case yearMonthDayTime12 = "yyy.MM.dd 'at' hh:mm a"
         case yearMonthDayTime24 = "yyy.MM.dd 'at' HH:mm"
         case yearMinthDay = "yyy.MM.dd"
     }
     
-    func dateToString(from date: Date, format: DateFormat) -> String {
+    public func dateToString(from date: Date, format: DateFormat) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format.rawValue
         return dateFormatter.string(from: date)

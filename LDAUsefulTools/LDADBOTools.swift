@@ -108,7 +108,7 @@ extension String {
     }
     
     
-    private func isPhoneNumberCorrest(for inputedPhoneNumber: String) -> Bool {
+    private func isPhoneNumberCorrect(for inputedPhoneNumber: String) -> Bool {
         var tmpEmptyString = inputedPhoneNumber.replacingOccurrences(of: " ", with: "")
         let firstSumbol = tmpEmptyString.removeFirst()
         guard firstSumbol == "8" || firstSumbol == "7" else { return false }
